@@ -8,7 +8,9 @@
         data.text_alignment.value[0] &&
         data.text_alignment.value[0].codename === 'center'
       "
-      :class="length > 4 && 'lg:w-[380px] md:w-[380px] sm:w-full'"
+      :class="
+        length > 4 || (length === 3 && 'lg:w-[380px] md:w-[380px] sm:w-full')
+      "
     >
       <img
         class="mx-auto my-4 w-12 h-12 text-primary-600"
@@ -147,7 +149,7 @@
       "
       class="flex p-2"
     >
-      <div class="flex justify-center items-center mr-4 w-8 h-8 shrink-0">
+      <div class="flex justify-center mr-4 shrink-0">
         <img
           class="w-10 h-10 text-teal-600"
           v-if="

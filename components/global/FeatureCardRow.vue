@@ -44,7 +44,7 @@
           data.number_of_cards.value[0] &&
           data.number_of_cards.value[0].codename === 'four'
         "
-        class="flex justify-center items-center gap-2 lg:flex-row  flex-col"
+        class="flex justify-center gap-2 lg:flex-row flex-col"
       >
         <div
           class="component component-CerCheckBox w-full"

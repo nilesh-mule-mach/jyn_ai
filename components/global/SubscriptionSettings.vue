@@ -10,6 +10,7 @@
         method="POST"
         accept-charset="UTF-8"
         enctype="multipart/form-data"
+        class="text-black"
       >
         <div class="grid lg:grid-cols-2 gap-4">
           <div>
@@ -87,7 +88,7 @@
             /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
             <div class="grid gap-4 lg:gap-6">
               <!-- Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 text-black">
                 <div>
                   <input
                     type="text"
@@ -145,7 +146,7 @@
             <!-- Checkbox -->
             <div class="mt-3 flex">
               <div>
-                <label for="remember-me" class="text-xs"
+                <label for="remember-me" class="text-xs text-black"
                   >By submitting this form I have read and acknowledged the
                   <a
                     class="text-blue-600 decoration-2 underline font-medium"

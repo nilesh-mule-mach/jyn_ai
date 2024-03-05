@@ -25,16 +25,16 @@
 			<form id='webform'
 				@submit.prevent="handleSubmit"
 				:action="formData.form_submit_url.value"
-				name=WebToLeads440392000010730026 method='POST'
+				name=WebToLeads440392000011138018 method='POST'
 				accept-charset='UTF-8'
 				ref="webform"
 				class="text-black"
 			>
-			<input type='text' style='display:none;' name='xnQsjsdp' value='fca34dfa7bc909e0f4b0544affa4c3c4fb36a1338d847352a07ef552c3be0ee8' /> 
+			<input type='text' style='display:none;' name='xnQsjsdp' value='a7b643a398072a3e8626a893c17f4ae697dbd0ed305212ddcfa9a6e4bf3d3faf' /> 
 			<input type='hidden' name='zc_gad' id='zc_gad' value='' />
-			<input type='text' style='display:none;' name='xmIwtLD' value='f73e0aef610e783c9b87f39c6dcb5f2f17ddb722c8c48dc72f41fc152a49b53340ce3b0c9d0e16b44292fec26ede0774'/> 
+			<input type='text' style='display:none;' name='xmIwtLD' value='b441fa61cea021f5b39f693c8b25256de904111016a978faefaf8e0a9da0d057d5243ad23285a0c8c7587b22d4570b6b'/> 
 			<input type='text'  style='display:none;' name='actionType' value='TGVhZHM=' />
-			<input type='text' style='display:none;' name='returnURL' :value="thankYouUrl" />
+			<input type='text' style='display:none;' name='returnURL' value="https://machintel.com/thank-you" />
 			<!-- Do not remove this code. -->
 			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 text-black">
 				<!-- Grid -->
@@ -113,7 +113,7 @@
 				/>
 				<input type="hidden" id="Lead_Status" v-model="leadStatus" name="Lead Status" />
 				<input type="hidden" id="Lead_Source" v-model="leadSource" name="Lead Source" />
-				<!-- UTM Medium --><input type='hidden' id='LEADCF21' name='LEADCF21' maxlength='255' v-model="LEADCF21" />
+				<!-- Asset Name --><input type='hidden' id='LEADCF21' name='LEADCF21' maxlength='255' v-model="LEADCF21" />
 				<!-- UTM Campaign --><input type='hidden' id='LEADCF22' name='LEADCF22' maxlength='255' v-model="LEADCF22" />
 				<!-- UTM Source --><input type='hidden' id='LEADCF19' name='LEADCF19' maxlength='255' v-model="LEADCF19" />
 				<!-- UTM Medium --><input type='hidden' id='LEADCF20' name='LEADCF20' maxlength='255' v-model="LEADCF20" />
@@ -132,13 +132,13 @@
 				</div>
 				</div>
 				<div class="mt-6 grid">
-				<button type="submit" class="btn bg-accent-2 text-white">
+				<button type="submit" class="btn bg-accent-2 text-white" id="meeting-submit">
 					Submit
 				</button>
 				</div>
 			
 			<!-- Do not remove this Analytics Tracking code starts -->
-			<script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=3cfee387668f884d504642f8fb6dd1400f6bb83cbd01ea0b70e2edc583f31c31da23f802796678f8725589176e54824fgid7cef5a6fece3ac184a32e9b4efe8a7a3401f5fec83004acdbdd6bc2b7dfc84f3gid9191dae8b35c299a833cefdae14de02bcbf1e274248110fad84f7a10b7d0d57bgidc9e90c9f48f9f58f00180630b19ac9477d08ce52b36dae7ed439dc02ea19afe0&tw=3589a4203232fa268ab05fc8a31e37c28dae22a79133802ba130ef8cd5b07bd8'></script><!-- Do not remove this Analytics Tracking code ends. -->
+			<script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=c3b11d2b3874b76d4870cc60e96d515d0921656a89c5c5522f34d81e2d0d3553ec49af956d4b4883efc2ae2a8610bd1fgid8472f62ad60499b46091704077f762e6c7b09fa384f8f63ffe016944b5d421f8gidea537491f0b4c181b01ee4fed29f88becbc226fa55c81c7b769870b23fdffdf0gid9942adfdc79f53685af256d76c3083521fd4b073de7847914be8120fbdc73683&tw=efbe416756c0f21fb127036dbb1e5ea6b3568229dabffc9de94d2c677c31adb2'></script><!-- Do not remove this Analytics Tracking code ends. -->
 			</form>
 		</div>
 		</div>
@@ -161,12 +161,12 @@
 			Email: "",
 			LEADCF24: '',
 			Phone:'',
-			LEADCF21:'',
+			LEADCF21:'Meeting Request',
 			LEADCF22:'',
 			LEADCF19:'',
 			LEADCF20:'',
 			leadStatus: 'New - Not Contacted',
-			leadSource: 'Website - Download',
+			leadSource: 'Website - Contact',
 			fullName: "",
 			formData: {
 				form_submit_url: {
@@ -186,23 +186,7 @@
 		const headingTypeCode = this.data.heading__heading_type.value[0].codename;
 		return getHeadingType(headingTypeCode);
 		},
-		thankYouUrl() {
-		const baseUrl = "https://machintel.com";
-		let path = this.$route.path;
-
-		// Remove the leading slash from the path if present
-		if (path.startsWith("/")) {
-			path = path.substring(1);
-		}
-
-		// Remove the trailing slash from the path if present
-		if (path.endsWith("/")) {
-			path = path.substring(0, path.length - 1);
-		}
-
-		// Append '-thank-you' to the path
-		return `${baseUrl}/${path}-thank-you`;
-		},
+		
 	},
 	mounted() {
 		this.prefillForm();

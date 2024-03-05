@@ -1,5 +1,6 @@
 const getSitemapRoutes = require("./sitemapRoutes");
 const getGenerateRoutes = require("./generateRoutes");
+const getFeed = require("./Feed");
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
@@ -14,9 +15,10 @@ export default {
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
     script: [
       // <script src="https://myawesome-lib.js"></script>
+      { src: "/js/personyze.js" },
 
       { src: "/js/flowbite.js" },
       {
@@ -26,7 +28,7 @@ export default {
       {
         src: "https://consent.cookiebot.com/uc.js?cbid=abb50094-60dd-4ec0-b61b-4a5f40e6922f",
       },
-      { src: "/js/zohoBot.js" },
+      //{ src: "/js/zohoBot.js" },
       { src: "/js/hotjar.js" },
     ],
   },
@@ -80,7 +82,15 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/dayjs",
     "vue-scrollto/nuxt",
+    "@nuxtjs/recaptcha",
+    "@nuxtjs/feed",
   ],
+  recaptcha: {
+    mode: "enterprise", // Mode: 'base', 'enterprise'
+    version: 3,
+    siteKey: "6Lf1sHgpAAAAAIxmxYTaS-N29O24RfhDcn1udHIa", // Site key for requests
+    size: "normal", // Size: 'compact', 'normal', 'invisible' (v2)
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -112,4 +122,15 @@ export default {
       return await getSitemapRoutes();
     },
   },
+  feed: [
+    {
+      path: "/feed.xml", // The route to your feed.
+      async create(feed) {
+        return await getFeed(feed);
+      }, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: "rss2", // Can be: rss2, atom1, json1
+      data: ["Some additional data"], // Will be passed as 2nd argument to `create` function
+    },
+  ],
 };

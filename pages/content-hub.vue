@@ -25,6 +25,7 @@
       <div class="col-span-2">
         <select
           v-model="selectedType"
+          @change="filterChange()"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         >
           <option value="All">All</option>
@@ -75,6 +76,19 @@
         </article>
       </a>
     </div>
+    <div class="flex gap-2 justify-end" v-if="showPagination">
+      <button class="p-2 bg-white rounded-lg border border-gray-200 shadow-md" @click="backPage">prev</button>
+      <button class="p-2 rounded-lg border border-gray-200 shadow-md"
+        :class="{ 'bg-blue-500': selectedId === item }"
+        v-for="item in Math.ceil(this.totalLength / perPage)"
+        :key="item"
+        @click="() => goToPage(item)"
+        :id="item"
+      >
+        {{ item }}
+      </button>
+      <button class="p-2 bg-white rounded-lg border border-gray-200 shadow-md" @click="nextPage">next</button>
+    </div>
   </div>
 </template>
 
@@ -86,6 +100,11 @@ export default {
     return {
       selectedType: "All", // Initialize with an empty string or a default value
       searchQuery: "", // Add this line
+      perPage: 10,
+      pageRef: 1,
+      totalLength: 0,
+      selectedId: 1,
+      prevSelectedType: null,
     };
   },
 
@@ -108,7 +127,7 @@ export default {
       const response = await deliveryClient
         .items() // Replace with your actual Kontent item codename
         .type(["blog_post", "resource_item"])
-
+        .collection("default")
         .orderParameter("elements.date[desc]")
         .toPromise();
 
@@ -159,11 +178,36 @@ export default {
             .includes(this.searchQuery.toLowerCase())
         );
       }
-
+      this.totalLength = result.length;
+      this.showPagination = (this.totalLength / this.perPage) >= 1;
+      result = result.slice((this.pageRef - 1) * this.perPage, this.pageRef * this.perPage)
       return result;
     },
   },
   methods: {
+    filterChange() {
+      if (this.selectedType !== this.prevSelectedType) {
+        this.selectedId = 1;
+        this.pageRef = 1;
+        this.prevSelectedType = this.selectedType;
+      }
+    },
+    nextPage() {
+      if (this.pageRef !== Math.ceil(this.totalLength / this.perPage)) {
+        this.pageRef += 1;
+        this.selectedId = this.pageRef;
+      }
+    },
+    backPage() {
+      if (this.pageRef !== 1) {
+        this.pageRef -= 1;
+        this.selectedId = this.pageRef;
+      }
+    },
+    goToPage(numPage) {
+      this.pageRef = numPage;
+      this.selectedId = this.pageRef;
+    },
     getType(post) {
       if (post.elements.blog_category) {
         return "Blog";

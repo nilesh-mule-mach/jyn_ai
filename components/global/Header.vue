@@ -141,6 +141,31 @@
                         </div>
                       </a>
                     </li>
+                     <li>
+                      <a
+                        href="/data/"
+                        class="flex items-center p-3 rounded-lg hover:bg-gray-100"
+                      >
+                        <div class="mr-4 bg-white rounded-lg shadow">
+                          <img
+                            class="w-14 h-14 hidden lg:block"
+                            src="/images/data.svg"
+                          />
+                        </div>
+                        <div>
+                          <div
+                            class="font-semibold text-primary hover:text-accent lg:text-base"
+                          >
+                            Data
+                          </div>
+                          <div
+                            class="text-sm font-light text-accent hidden lg:block"
+                          >
+                            Better Consumer &amp; Business Data
+                          </div>
+                        </div>
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/intelligence/"
@@ -166,58 +191,34 @@
                         </div>
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="/events/"
-                        class="flex items-center p-3 rounded-lg hover:bg-gray-100"
-                      >
-                        <div class="mr-4 bg-white rounded-lg shadow">
-                          <img
-                            class="w-14 h-14 hidden lg:block"
-                            src="/images/events.svg"
-                          />
-                        </div>
-                        <div>
-                          <div
-                            class="font-semibold text-primary hover:text-accent lg:text-base"
-                          >
-                            Events
-                          </div>
-                          <div
-                            class="text-sm font-light text-accent hidden lg:block"
-                          >
-                            Improve Registrations and Engagements
-                          </div>
-                        </div>
-                      </a>
-                    </li>
+                  
                   </ul>
                 </div>
                 <div
                   class="lg:p-2 text-gray-900 bg-white lg:rounded-lg dark:text-white lg:col-span-4 dark:bg-gray-800"
                 >
                   <ul>
-                    <li>
+                        <li>
                       <a
-                        href="/data/"
+                        href="/web-development/"
                         class="flex items-center p-3 rounded-lg hover:bg-gray-100"
                       >
                         <div class="mr-4 bg-white rounded-lg shadow">
                           <img
                             class="w-14 h-14 hidden lg:block"
-                            src="/images/data.svg"
+                            src="/images/web.svg"
                           />
                         </div>
                         <div>
                           <div
                             class="font-semibold text-primary hover:text-accent lg:text-base"
                           >
-                            Data
+                            Web &amp; App Development
                           </div>
                           <div
                             class="text-sm font-light text-accent hidden lg:block"
                           >
-                            Better Consumer &amp; Business Data
+                            Faster, More Secure Sites &amp; Apps
                           </div>
                         </div>
                       </a>
@@ -247,27 +248,27 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                  <li>
                       <a
-                        href="/web-development/"
+                        href="/events/"
                         class="flex items-center p-3 rounded-lg hover:bg-gray-100"
                       >
                         <div class="mr-4 bg-white rounded-lg shadow">
                           <img
                             class="w-14 h-14 hidden lg:block"
-                            src="/images/web.svg"
+                            src="/images/events.svg"
                           />
                         </div>
                         <div>
                           <div
                             class="font-semibold text-primary hover:text-accent lg:text-base"
                           >
-                            Web &amp; App Development
+                            Events
                           </div>
                           <div
                             class="text-sm font-light text-accent hidden lg:block"
                           >
-                            Faster, More Secure Sites &amp; Apps
+                            Improve Registrations and Engagements
                           </div>
                         </div>
                       </a>

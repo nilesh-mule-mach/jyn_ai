@@ -4,7 +4,7 @@
   >
     <div class="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6 lg:gap-x-12">
       <!-- Content -->
-      <div class="lg:col-span-2 content">
+      <div class="lg:col-span-3 content">
         <div class="py-8 lg:pe-4 lg:pe-8">
           <div class="space-y-5 lg:space-y-8">
             <h1
@@ -15,13 +15,11 @@
 
             <div class="flex items-center gap-x-5">
               <span
-                class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-accent text-white"
+                class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-accent-2 text-white"
               >
-                {{ pageData.blog_category.value[0].name }}
+                {{ pageData.seo_clusters.value[0].name }}
               </span>
-              <p class="text-xs sm:text-sm text-font">
-                {{ $dayjs(pageData.date.value).format("MMM D, YYYY") }}
-              </p>
+
               <p class="pt-2 text-3xl ml-auto">
                 <ShareNetwork
                   network="facebook"
@@ -55,8 +53,8 @@
                 </ShareNetwork>
               </p>
             </div>
+
             <div v-if="containsObjectTag">
-              <!-- Iterate over each linked item and render the appropriate component -->
               <div
                 v-if="
                   pageData &&
@@ -75,6 +73,7 @@
                     v-bind="getComponentProps(item)"
                   ></component>
                 </div>
+
                 <span
                   v-html="
                     contentObjectTagArray(pageData.content.linkedItems.length)
@@ -82,6 +81,7 @@
                 ></span>
               </div>
             </div>
+
             <div v-else>
               <span v-html="pageData.content.value"></span>
             </div>
@@ -89,38 +89,6 @@
         </div>
       </div>
       <!-- End Content -->
-
-      <!-- Sidebar -->
-      <div class="lg:col-span-1 lg:w-full lg:h-full">
-        <div class="sticky top-20 start-14 py-8 lg:ps-4 lg:ps-8">
-          <h6 class="text-xl text-accent-2 font-medium mb-5">Recent Posts</h6>
-
-          <div class="space-y-6">
-            <!-- Media -->
-            <a
-              class="group flex items-center gap-x-6 hover:bg-grey-100 pr-4"
-              :href="'/blog/' + item.elements.slug.value"
-              v-for="(item, index) in latestPosts"
-              :key="index"
-            >
-              <div class="flex-shrink-0 rounded-lg w-20 h-20">
-                <img
-                  class="w-full object-cover h-full rounded-lg"
-                  :src="item.elements.image.value[0].url"
-                  :alt="item.elements.image.value[0].description"
-                />
-              </div>
-              <div>
-                <span class="text-sm font-medium py-5 text-lg">
-                  {{ item.elements.post_title.value }}
-                </span>
-              </div>
-            </a>
-            <!-- End Media -->
-          </div>
-        </div>
-      </div>
-      <!-- End Sidebar -->
     </div>
   </div>
 </template>
@@ -132,29 +100,28 @@ import { DeliveryClient } from "@kentico/kontent-delivery";
 export default {
   async asyncData({ route, params }) {
     const projectId = process.env.PROJECT_ID;
-		const previewApiKey = process.env.PREVIEW_ID;
+    const previewApiKey = process.env.PREVIEW_ID;
 
-		const config = {
-			projectId: projectId,
-		};
-		if (previewApiKey) {
-			config.previewApiKey = previewApiKey;
-			config.defaultQueryConfig = { usePreviewMode: true };
-		}
+    const config = {
+      projectId: projectId,
+    };
+    if (previewApiKey) {
+      config.previewApiKey = previewApiKey;
+      config.defaultQueryConfig = { usePreviewMode: true };
+    }
 
-
-		const deliveryClient = new DeliveryClient(config);
+    const deliveryClient = new DeliveryClient(config);
     try {
       const response = await deliveryClient
         .items()
-        .type("blog_post")
+        .type("seo_page")
         .collection("default")
         .equalsFilter("elements.slug", route.params.uid)
         .toPromise();
 
       const latest = await deliveryClient
         .items() // Replace with your actual Kontent item codename
-        .type("blog_post")
+        .type("seo_page")
         .orderParameter("elements.date[desc]")
         .collection("default")
         .limitParameter(3)

@@ -136,6 +136,11 @@
       @apply bg-primary text-white border-white border-2;
     }
   }
+  .resource{
+    h3{
+      @apply text-2xl font-bold mb-5 mt-5 text-primary;
+    }
+  }
   p {
     @apply mb-5 mt-5;
   }

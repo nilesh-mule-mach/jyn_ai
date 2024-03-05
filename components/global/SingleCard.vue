@@ -46,6 +46,21 @@
         />
       </div>
     </div>
+
+    <div
+      v-if="data.elements.text_alignment.value[0].codename === 'simple_card'"
+      class="bg-white rounded-lg px-16 pt-10"
+    >
+      <h2 class="font-semibold text-accent text-xl">
+        {{ data.elements.heading.value }}
+      </h2>
+      <div class="mb-4 text-gray-500" v-html="data.elements.content.value" />
+      <img
+        class="mx-auto"
+        :src="data.elements.image.value[0].url"
+        :alt="data.elements.image.value[0].description"
+      />
+    </div>
   </div>
 </template>
 
