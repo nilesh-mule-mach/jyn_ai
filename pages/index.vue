@@ -34,7 +34,7 @@ export default {
 
     try {
       const response = await deliveryClient
-        .item("machintel_home_page") // Replace with your actual Kontent item codename
+        .item("jyn_home") // Replace with your actual Kontent item codename
         .toPromise();
       // returns item data
       return { pageData: response.data.item };
@@ -81,8 +81,8 @@ export default {
   //SEO stuff
   head() {
     return {
-      title: this.pageData.elements.meta_title.value,
-      meta: [
+      title: "Jyn.ai",
+     /*  meta: [
         {
           hid: "description",
           name: "description",
@@ -125,7 +125,7 @@ export default {
           rel: "canonical",
           href: "https://machintel.com",
         },
-      ],
+      ], */
     };
   },
 };

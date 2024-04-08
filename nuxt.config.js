@@ -15,7 +15,7 @@ export default {
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
     script: [
       // <script src="https://myawesome-lib.js"></script>
       { src: "/js/personyze.js" },

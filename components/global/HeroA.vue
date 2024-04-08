@@ -2,7 +2,7 @@
   <!-- Hero -->
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Grid -->
-    <div class="grid lg:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+    <div class="grid gap-4 md:gap-8 xl:gap-20 md:items-center text-center">
       <div>
         <div
           v-if="
@@ -43,13 +43,7 @@
       </div>
       <!-- End Col -->
 
-      <div class="relative lg:ml-4">
-        <img
-          class="rounded-md max-h-96 mx-auto w-auto"
-          :src="data.image.value[0].url"
-          :alt="data.image.value[0].description"
-        />
-      </div>
+      
       <!-- End Col -->
     </div>
     <!-- End Grid -->

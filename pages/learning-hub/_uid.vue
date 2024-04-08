@@ -115,7 +115,7 @@ export default {
       const response = await deliveryClient
         .items()
         .type("seo_page")
-        .collection("default")
+        .collection("jynai")
         .equalsFilter("elements.slug", route.params.uid)
         .toPromise();
 
@@ -123,7 +123,7 @@ export default {
         .items() // Replace with your actual Kontent item codename
         .type("seo_page")
         .orderParameter("elements.date[desc]")
-        .collection("default")
+        .collection("jynai")
         .limitParameter(3)
         .toPromise();
 

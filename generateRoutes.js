@@ -8,7 +8,7 @@ async function getDynamicRoutes() {
   const seoResult = await deliveryClient
     .items()
     .type("seo_page")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const seoRoutes = seoResult.data.items.map(
@@ -18,7 +18,7 @@ async function getDynamicRoutes() {
   const blogResult = await deliveryClient
     .items()
     .type("blog_post")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const blogRoutes = blogResult.data.items.map(
@@ -29,7 +29,7 @@ async function getDynamicRoutes() {
   const caseStudyResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["case_study"])
     .toPromise();
 
@@ -41,7 +41,7 @@ async function getDynamicRoutes() {
   const eBookResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["e_book"])
     .toPromise();
 
@@ -53,7 +53,7 @@ async function getDynamicRoutes() {
   const infographicResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["infographic"])
     .toPromise();
 
@@ -65,7 +65,7 @@ async function getDynamicRoutes() {
   const webinarResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["webinar"])
     .toPromise();
 
@@ -77,7 +77,7 @@ async function getDynamicRoutes() {
   const whitepaperResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["whitepaper"])
     .toPromise();
 
@@ -89,7 +89,7 @@ async function getDynamicRoutes() {
   const pageResult = await deliveryClient
     .items()
     .type("component_page")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const pageRoutes = pageResult.data.items.map(
@@ -99,35 +99,35 @@ async function getDynamicRoutes() {
   const caseStudyThankYou = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["case_study"])
     .toPromise();
 
   const ebookThankYou = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["e_book"])
     .toPromise();
 
   const infographicThankYou = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["infographic"])
     .toPromise();
 
   const webinarThankYou = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["webinar"])
     .toPromise();
 
   const whitepaperThankYou = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["whitepaper"])
     .toPromise();
 

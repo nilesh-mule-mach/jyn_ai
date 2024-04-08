@@ -8,7 +8,7 @@ async function getDynamicRoutes() {
   const seoResult = await deliveryClient
     .items()
     .type("seo_page")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const seoRoutes = seoResult.data.items.map(
@@ -18,7 +18,7 @@ async function getDynamicRoutes() {
   const blogResult = await deliveryClient
     .items()
     .type("blog_post")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const blogRoutes = blogResult.data.items.map(
@@ -29,7 +29,7 @@ async function getDynamicRoutes() {
   const pageResult = await deliveryClient
     .items()
     .type("component_page")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
 
   const pageRoutes = pageResult.data.items.map(

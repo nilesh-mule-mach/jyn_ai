@@ -13,7 +13,7 @@ async function getFeed(feed) {
   const blogResult = await deliveryClient
     .items()
     .type("blog_post")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
   const blogFeed = blogResult.data.items.map((item) => {
     return {
@@ -26,7 +26,7 @@ async function getFeed(feed) {
   const seoPageResult = await deliveryClient
     .items()
     .type("seo_page")
-    .collection("default")
+    .collection("jynai")
     .toPromise();
   const seoFeed = seoPageResult.data.items.map((item) => {
     return {
@@ -40,7 +40,7 @@ async function getFeed(feed) {
   const whitepaperResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["whitepaper"])
     .toPromise();
 
@@ -56,7 +56,7 @@ async function getFeed(feed) {
   const caseStudyResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["case_study"])
     .toPromise();
 
@@ -71,7 +71,7 @@ async function getFeed(feed) {
   const eBookResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["e_book"])
     .toPromise();
 
@@ -86,7 +86,7 @@ async function getFeed(feed) {
   const infographicResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["infographic"])
     .toPromise();
 
@@ -102,7 +102,7 @@ async function getFeed(feed) {
   const webinarResult = await deliveryClient
     .items()
     .type("resource_item")
-    .collection("default")
+    .collection("jynai")
     .containsFilter("elements.type", ["webinar"])
     .toPromise();
 

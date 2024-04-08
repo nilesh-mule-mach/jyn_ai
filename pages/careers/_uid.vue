@@ -225,7 +225,7 @@ export default {
       const response = await deliveryClient
         .items()
         .type("job_opening")
-        .collection("default")
+        .collection("jynai")
         .equalsFilter("elements.slug", route.params.uid)
         .toPromise();
 
