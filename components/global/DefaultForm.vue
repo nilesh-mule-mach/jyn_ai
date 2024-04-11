@@ -1,9 +1,9 @@
 <template>
   <div
-    class="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto default-form"
+    class=" max-w-screen-sm px-4 py-10 sm:px-6 lg:px-8 mx-auto default-form"
   >
-    <div class="grid lg:grid-cols-2 gap-4">
-      <div v-html="data.content.value" class="pr-10 text-2xl" />
+    <div class="grid gap-4">
+     <!--  <div v-html="data.content.value" class="pr-10 text-2xl" /> -->
       <div class="p-10 bg-white shadow-md">
         <!--Zoho Marketing Automation Web-Optin Form's Header Code Starts Here-->
         <!--Zoho Marketing Automation Web-Optin Form Starts Here-->
