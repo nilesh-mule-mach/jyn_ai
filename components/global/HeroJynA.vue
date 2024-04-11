@@ -1,9 +1,12 @@
 <template>
     <!-- Hero -->
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div :style="{
+      backgroundImage: 'url(' + data.background_image.value[0].url + ')',
+      backgroundSize: '100% 100%'
+    }" class="bg-cover bg-no-repeat relative overflow-hidden before:absolute before:bg-top bg-contain before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 pt-20">
       <!-- Grid -->
-      <div class="grid gap-4 md:gap-8 xl:gap-20 md:items-center text-center">
-        <div>
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div class="max-w-2xl text-center mx-auto">
           <div
             v-if="
               data &&
