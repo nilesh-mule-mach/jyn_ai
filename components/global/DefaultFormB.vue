@@ -187,7 +187,7 @@
 		return getHeadingType(headingTypeCode);
 		},
 		thankYouUrl() {
-		const baseUrl = "https://machintel.com";
+		const baseUrl = "https://stage-jyn.netlify.app/";
 		let path = this.$route.path;
 
 		// Remove the leading slash from the path if present
@@ -204,34 +204,34 @@
 		return `${baseUrl}/${path}-thank-you`;
 		},
 	},
-	mounted() {
-		this.prefillForm();
-	},
+	// mounted() {
+	// 	this.prefillForm();
+	// },
 	methods: {
 		getHeadingWeight,
 		getHeadingColor,
 		getHeadingSize,
 		handleSubmit() {
         if (this.fullName) {
-          window.location.href = "https://machintel.com/thank-you-two";
+          window.location.href = "https://stage-jyn.netlify.app/thank-you-two";
           return;
         }
         // Programmatically submit the form
         this.$refs.webform.submit();
         },
-		prefillForm() {
-		const queryParams = new URL(window.location.href).searchParams;
-		if (queryParams.has("utm_source")) {
-			this.LEADCF19 = queryParams.get("utm_source");
-		}
-		if (queryParams.has("utm_medium")) {
-			this.LEADCF20 = queryParams.get("utm_medium");
-		}
-		if (queryParams.has("utm_campaign")) {
-			this.LEADCF22 = queryParams.get("utm_campaign");
-		}
-		this.LEADCF21 = this.data.heading__heading_text.value;
-		},
+		// prefillForm() {
+		// const queryParams = new URL(window.location.href).searchParams;
+		// if (queryParams.has("utm_source")) {
+		// 	this.LEADCF19 = queryParams.get("utm_source");
+		// }
+		// if (queryParams.has("utm_medium")) {
+		// 	this.LEADCF20 = queryParams.get("utm_medium");
+		// }
+		// if (queryParams.has("utm_campaign")) {
+		// 	this.LEADCF22 = queryParams.get("utm_campaign");
+		// }
+		// this.LEADCF21 = this.data.heading__heading_text.value;
+		// },
 	},
 	};
 	</script>
