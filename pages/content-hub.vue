@@ -227,13 +227,13 @@ export default {
   },
   head() {
     return {
-      title: "Next-Level Marketing Insights | Machintel",
+      title: "Content-hub | jyn.ai",
       meta: [
         {
           hid: "description",
-          name: "description",
-          content:
-            "Unlock B2B insights in Machintel's expanding content vault. Download resources for continuous education and amplify your integrated marketing expertise.",
+          // name: "description",
+          // content:
+          //   "Unlock B2B insights in Machintel's expanding content vault. Download resources for continuous education and amplify your integrated marketing expertise.",
         },
       ],
     };

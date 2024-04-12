@@ -110,7 +110,7 @@ export default {
   sitemap: {
     cacheTime: 1000 * 60 * 60 * 2,
     path: "/sitemap.xml",
-    hostname: "https://machintel.com", // Replace with your site's URL
+    hostname: "https://stage-jyn.netlify.app/", // Replace with your site's URL
     exclude: [
       "/thank-you",
       "thank-you-two",
