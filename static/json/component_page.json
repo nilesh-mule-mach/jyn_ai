@@ -1,0 +1,1219 @@
+[
+  {
+    "elements": {
+      "page_title": {
+        "name": "Page Title",
+        "type": "text",
+        "value": "Jyn Home"
+      },
+      "slug": {
+        "name": "Slug",
+        "type": "url_slug",
+        "value": "/"
+      },
+      "components": {
+        "images": [],
+        "linkedItemCodenames": [
+          "d7512ce2_c8d7_013d_5df4_ba7744d54ce0",
+          "n622cc304_dd29_01b3_11b7_80287be72dfc",
+          "cf4cb734_cecc_01fc_6855_22a53d7885bd",
+          "cbbeb845_9646_01b1_104d_251d787185b4",
+          "n3a0e42b2_a13c_0168_ae17_3d1052ca5776"
+        ],
+        "linkedItems": [
+          {
+            "elements": {
+              "padding": {
+                "name": "Padding",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "margin": {
+                "name": "Margin",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "background_color": {
+                "name": "Background color",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "White",
+                    "codename": "white"
+                  }
+                ]
+              },
+              "components": {
+                "images": [],
+                "linkedItemCodenames": [
+                  "n771225aa_3ad1_019d_2a79_e7601e0a8f2f"
+                ],
+                "linkedItems": [
+                  {
+                    "elements": {
+                      "heading__heading_text": {
+                        "name": "Heading Text",
+                        "type": "text",
+                        "value": "Your Go To Partner for Intelligent Transformation Lorem Ipsum is not simply random text."
+                      },
+                      "heading__heading_type": {
+                        "name": "Heading Type",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "H1",
+                            "codename": "h1"
+                          }
+                        ]
+                      },
+                      "heading__heading_size": {
+                        "name": "Heading Size",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "6XL",
+                            "codename": "n6xl"
+                          }
+                        ]
+                      },
+                      "heading__heading_weight": {
+                        "name": "Heading Weight",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "extrabold",
+                            "codename": "extrabold"
+                          }
+                        ]
+                      },
+                      "heading__heading_color": {
+                        "name": "Heading Color",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "White",
+                            "codename": "white"
+                          }
+                        ]
+                      },
+                      "description": {
+                        "name": "Description",
+                        "type": "text",
+                        "value": "Explore the world’s largest network of partner and channel ecosystems to discover new opportunities for growth."
+                      },
+                      "background_image": {
+                        "name": "Background Image",
+                        "type": "asset",
+                        "value": [
+                          {
+                            "name": "shutterstock_2010603539.jpg",
+                            "description": null,
+                            "type": "image/jpeg",
+                            "size": 23474649,
+                            "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/0e03fa9c-e2ae-4f06-856c-19674708601f/shutterstock_2010603539.jpg",
+                            "width": 8160,
+                            "height": 4944,
+                            "renditions": {}
+                          }
+                        ]
+                      },
+                      "button_cta": {
+                        "images": [],
+                        "linkedItemCodenames": [
+                          "c73a2cba_bbad_015d_8b13_40dc4505e7d9"
+                        ],
+                        "linkedItems": [
+                          {
+                            "elements": {
+                              "button_alignment": {
+                                "name": "Button Alignment",
+                                "type": "multiple_choice",
+                                "value": [
+                                  {
+                                    "name": "centre",
+                                    "codename": "centre"
+                                  }
+                                ]
+                              },
+                              "color": {
+                                "name": "color",
+                                "type": "multiple_choice",
+                                "value": [
+                                  {
+                                    "name": "bg-accent-2",
+                                    "codename": "bg_accent_2"
+                                  }
+                                ]
+                              },
+                              "button_text": {
+                                "name": "Button Text",
+                                "type": "text",
+                                "value": "Join waitlist"
+                              },
+                              "button_link": {
+                                "name": "Button Link",
+                                "type": "text",
+                                "value": "/contact-us/"
+                              }
+                            },
+                            "system": {
+                              "codename": "c73a2cba_bbad_015d_8b13_40dc4505e7d9",
+                              "collection": "jynai",
+                              "id": "c73a2cba-bbad-015d-8b13-40dc4505e7d9",
+                              "language": "default",
+                              "lastModified": "2024-04-11T15:26:25.3787022Z",
+                              "name": "c73a2cba-bbad-015d-8b13-40dc4505e7d9",
+                              "sitemapLocations": [],
+                              "type": "na__cta",
+                              "workflowStep": null
+                            }
+                          }
+                        ],
+                        "links": [],
+                        "name": "Button Cta",
+                        "type": "rich_text",
+                        "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"c73a2cba_bbad_015d_8b13_40dc4505e7d9\"></object>"
+                      },
+                      "hero_header": {
+                        "name": "Hero Header",
+                        "type": "text",
+                        "value": "Welcome to Marketing, but Smarter"
+                      }
+                    },
+                    "system": {
+                      "codename": "n771225aa_3ad1_019d_2a79_e7601e0a8f2f",
+                      "collection": "jynai",
+                      "id": "771225aa-3ad1-019d-2a79-e7601e0a8f2f",
+                      "language": "default",
+                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                      "name": "771225aa-3ad1-019d-2a79-e7601e0a8f2f",
+                      "sitemapLocations": [],
+                      "type": "hero__jyn__a",
+                      "workflowStep": null
+                    }
+                  }
+                ],
+                "links": [],
+                "name": "Components",
+                "type": "rich_text",
+                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n771225aa_3ad1_019d_2a79_e7601e0a8f2f\"></object>"
+              }
+            },
+            "system": {
+              "codename": "d7512ce2_c8d7_013d_5df4_ba7744d54ce0",
+              "collection": "jynai",
+              "id": "d7512ce2-c8d7-013d-5df4-ba7744d54ce0",
+              "language": "default",
+              "lastModified": "2024-04-11T15:26:25.3787022Z",
+              "name": "d7512ce2-c8d7-013d-5df4-ba7744d54ce0",
+              "sitemapLocations": [],
+              "type": "component__section",
+              "workflowStep": null
+            }
+          },
+          {
+            "elements": {
+              "padding": {
+                "name": "Padding",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "margin": {
+                "name": "Margin",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "background_color": {
+                "name": "Background color",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "Dark Grey",
+                    "codename": "dark_grey"
+                  }
+                ]
+              },
+              "components": {
+                "images": [],
+                "linkedItemCodenames": [
+                  "eb014c6d_a0b6_0117_ad32_175cf878e716"
+                ],
+                "linkedItems": [
+                  {
+                    "elements": {
+                      "alignment": {
+                        "name": "Alignment",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "center",
+                            "codename": "center"
+                          }
+                        ]
+                      },
+                      "width": {
+                        "name": "Width",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "Center Large",
+                            "codename": "center_large"
+                          }
+                        ]
+                      },
+                      "heading__heading_text": {
+                        "name": "Heading Text",
+                        "type": "text",
+                        "value": "The Future of Marketing Is Smarter. Better. Faster."
+                      },
+                      "heading__heading_type": {
+                        "name": "Heading Type",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "H3",
+                            "codename": "h3"
+                          }
+                        ]
+                      },
+                      "heading__heading_size": {
+                        "name": "Heading Size",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "4XL",
+                            "codename": "n4xl"
+                          }
+                        ]
+                      },
+                      "heading__heading_weight": {
+                        "name": "Heading Weight",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "extrabold",
+                            "codename": "extrabold"
+                          }
+                        ]
+                      },
+                      "heading__heading_color": {
+                        "name": "Heading Color",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "Primary",
+                            "codename": "primary"
+                          }
+                        ]
+                      },
+                      "small_heading": {
+                        "name": "Small Heading",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "content": {
+                        "images": [],
+                        "linkedItemCodenames": [],
+                        "linkedItems": [],
+                        "links": [],
+                        "name": "Content",
+                        "type": "rich_text",
+                        "value": "<p>Everything moves so fast in the world of marketing! That’s why we’re keeping you up to date with the latest marketing trends, facts, and need-to-know details.</p>"
+                      },
+                      "button_left_text": {
+                        "name": "Button Left Text",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "button_left_link": {
+                        "name": "Button Left Link",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "button_right_text": {
+                        "name": "Button Right Text",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "button_right_link": {
+                        "name": "Button Right Link",
+                        "type": "text",
+                        "value": ""
+                      }
+                    },
+                    "system": {
+                      "codename": "eb014c6d_a0b6_0117_ad32_175cf878e716",
+                      "collection": "jynai",
+                      "id": "eb014c6d-a0b6-0117-ad32-175cf878e716",
+                      "language": "default",
+                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                      "name": "eb014c6d-a0b6-0117-ad32-175cf878e716",
+                      "sitemapLocations": [],
+                      "type": "just__text",
+                      "workflowStep": null
+                    }
+                  }
+                ],
+                "links": [],
+                "name": "Components",
+                "type": "rich_text",
+                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"eb014c6d_a0b6_0117_ad32_175cf878e716\"></object>"
+              }
+            },
+            "system": {
+              "codename": "n622cc304_dd29_01b3_11b7_80287be72dfc",
+              "collection": "jynai",
+              "id": "622cc304-dd29-01b3-11b7-80287be72dfc",
+              "language": "default",
+              "lastModified": "2024-04-11T15:26:25.3787022Z",
+              "name": "622cc304-dd29-01b3-11b7-80287be72dfc",
+              "sitemapLocations": [],
+              "type": "component__section",
+              "workflowStep": null
+            }
+          },
+          {
+            "elements": {
+              "padding": {
+                "name": "Padding",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "Small",
+                    "codename": "small"
+                  }
+                ]
+              },
+              "margin": {
+                "name": "Margin",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "background_color": {
+                "name": "Background color",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "Dark Grey",
+                    "codename": "dark_grey"
+                  }
+                ]
+              },
+              "components": {
+                "images": [],
+                "linkedItemCodenames": [
+                  "b2b6751b_40f6_01b3_f2e1_1d8170ac4850"
+                ],
+                "linkedItems": [
+                  {
+                    "elements": {
+                      "number_of_cards": {
+                        "name": "Number of Cards",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "blog-card",
+                            "codename": "blog_card"
+                          }
+                        ]
+                      },
+                      "feature_card": {
+                        "images": [],
+                        "linkedItemCodenames": [
+                          "n6218c5b9_850b_0156_26b7_4766ba5ffe52",
+                          "n7dcc8e4b_3ea9_0136_3db1_a746fcc85775",
+                          "b98a5f01_5091_01df_4b4d_b66acff340e2"
+                        ],
+                        "linkedItems": [
+                          {
+                            "elements": {
+                              "image": {
+                                "name": "Image",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "card-header.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 162065,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/f67d5232-8654-40da-90b9-e2df6535f12e/card-header.png",
+                                    "width": 405,
+                                    "height": 237,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "small_text": {
+                                "name": "Small Text",
+                                "type": "text",
+                                "value": "Article"
+                              },
+                              "heading": {
+                                "name": "Heading",
+                                "type": "text",
+                                "value": "Next Gen Lead Gen: What it is, and what you need to know for 2024"
+                              },
+                              "description": {
+                                "name": "Description",
+                                "type": "text",
+                                "value": "Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office."
+                              },
+                              "avatar": {
+                                "name": "Avatar",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "Home Avatar.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 20534,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/a86b76a1-5abc-4876-b713-7695d6e95b84/Home%20Avatar.png",
+                                    "width": 96,
+                                    "height": 96,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "name": {
+                                "name": "Name",
+                                "type": "text",
+                                "value": "Bonnie Green"
+                              },
+                              "date": {
+                                "name": "Date",
+                                "type": "text",
+                                "value": "Aug 10, 2021 · 6 min read"
+                              },
+                              "button_cta": {
+                                "images": [],
+                                "linkedItemCodenames": [
+                                  "n421959dd_94bd_0186_8b1c_a140addc2782"
+                                ],
+                                "linkedItems": [
+                                  {
+                                    "elements": {
+                                      "button_alignment": {
+                                        "name": "Button Alignment",
+                                        "type": "multiple_choice",
+                                        "value": []
+                                      },
+                                      "color": {
+                                        "name": "color",
+                                        "type": "multiple_choice",
+                                        "value": [
+                                          {
+                                            "name": "bg-accent-2",
+                                            "codename": "bg_accent_2"
+                                          }
+                                        ]
+                                      },
+                                      "button_text": {
+                                        "name": "Button Text",
+                                        "type": "text",
+                                        "value": "Read more"
+                                      },
+                                      "button_link": {
+                                        "name": "Button Link",
+                                        "type": "text",
+                                        "value": " /blog/next-gen-lead-generation-quality-over-quantity-2024-guide"
+                                      }
+                                    },
+                                    "system": {
+                                      "codename": "n421959dd_94bd_0186_8b1c_a140addc2782",
+                                      "collection": "jynai",
+                                      "id": "421959dd-94bd-0186-8b1c-a140addc2782",
+                                      "language": "default",
+                                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                                      "name": "421959dd-94bd-0186-8b1c-a140addc2782",
+                                      "sitemapLocations": [],
+                                      "type": "na__cta",
+                                      "workflowStep": null
+                                    }
+                                  }
+                                ],
+                                "links": [],
+                                "name": "Button Cta",
+                                "type": "rich_text",
+                                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n421959dd_94bd_0186_8b1c_a140addc2782\"></object>"
+                              }
+                            },
+                            "system": {
+                              "codename": "n6218c5b9_850b_0156_26b7_4766ba5ffe52",
+                              "collection": "jynai",
+                              "id": "6218c5b9-850b-0156-26b7-4766ba5ffe52",
+                              "language": "default",
+                              "lastModified": "2024-04-11T15:26:25.3787022Z",
+                              "name": "6218c5b9-850b-0156-26b7-4766ba5ffe52",
+                              "sitemapLocations": [],
+                              "type": "blog__card",
+                              "workflowStep": null
+                            }
+                          },
+                          {
+                            "elements": {
+                              "image": {
+                                "name": "Image",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "card-header-2.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 139401,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/3b91e182-0d65-4788-9438-be2c7faf57e7/card-header-2.png",
+                                    "width": 412,
+                                    "height": 237,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "small_text": {
+                                "name": "Small Text",
+                                "type": "text",
+                                "value": "Case Study"
+                              },
+                              "heading": {
+                                "name": "Heading",
+                                "type": "text",
+                                "value": "Marketing but Smarter, part II: what it is, and what it means for you."
+                              },
+                              "description": {
+                                "name": "Description",
+                                "type": "text",
+                                "value": "Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office."
+                              },
+                              "avatar": {
+                                "name": "Avatar",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "Home Avatar.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 20534,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/a86b76a1-5abc-4876-b713-7695d6e95b84/Home%20Avatar.png",
+                                    "width": 96,
+                                    "height": 96,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "name": {
+                                "name": "Name",
+                                "type": "text",
+                                "value": "Bonnie Green"
+                              },
+                              "date": {
+                                "name": "Date",
+                                "type": "text",
+                                "value": "Aug 10, 2021 · 6 min read"
+                              },
+                              "button_cta": {
+                                "images": [],
+                                "linkedItemCodenames": [
+                                  "n40c3b804_2104_019f_a520_d410983d4c45"
+                                ],
+                                "linkedItems": [
+                                  {
+                                    "elements": {
+                                      "button_alignment": {
+                                        "name": "Button Alignment",
+                                        "type": "multiple_choice",
+                                        "value": []
+                                      },
+                                      "color": {
+                                        "name": "color",
+                                        "type": "multiple_choice",
+                                        "value": [
+                                          {
+                                            "name": "bg-accent-2",
+                                            "codename": "bg_accent_2"
+                                          }
+                                        ]
+                                      },
+                                      "button_text": {
+                                        "name": "Button Text",
+                                        "type": "text",
+                                        "value": "Read more"
+                                      },
+                                      "button_link": {
+                                        "name": "Button Link",
+                                        "type": "text",
+                                        "value": "/case-studies/great-minds-event-management-media-partnership-campaign"
+                                      }
+                                    },
+                                    "system": {
+                                      "codename": "n40c3b804_2104_019f_a520_d410983d4c45",
+                                      "collection": "jynai",
+                                      "id": "40c3b804-2104-019f-a520-d410983d4c45",
+                                      "language": "default",
+                                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                                      "name": "40c3b804-2104-019f-a520-d410983d4c45",
+                                      "sitemapLocations": [],
+                                      "type": "na__cta",
+                                      "workflowStep": null
+                                    }
+                                  }
+                                ],
+                                "links": [],
+                                "name": "Button Cta",
+                                "type": "rich_text",
+                                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n40c3b804_2104_019f_a520_d410983d4c45\"></object>"
+                              }
+                            },
+                            "system": {
+                              "codename": "n7dcc8e4b_3ea9_0136_3db1_a746fcc85775",
+                              "collection": "jynai",
+                              "id": "7dcc8e4b-3ea9-0136-3db1-a746fcc85775",
+                              "language": "default",
+                              "lastModified": "2024-04-11T15:26:25.3787022Z",
+                              "name": "7dcc8e4b-3ea9-0136-3db1-a746fcc85775",
+                              "sitemapLocations": [],
+                              "type": "blog__card",
+                              "workflowStep": null
+                            }
+                          },
+                          {
+                            "elements": {
+                              "image": {
+                                "name": "Image",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "card-header-3.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 173707,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/be4e6dd2-9af5-4a8c-b051-503b2c3c43ea/card-header-3.png",
+                                    "width": 405,
+                                    "height": 237,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "small_text": {
+                                "name": "Small Text",
+                                "type": "text",
+                                "value": "Webinar"
+                              },
+                              "heading": {
+                                "name": "Heading",
+                                "type": "text",
+                                "value": "Mastering the Modern Data Driven Marketing: Navigating Challenges and Opportunities"
+                              },
+                              "description": {
+                                "name": "Description",
+                                "type": "text",
+                                "value": "Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.\n"
+                              },
+                              "avatar": {
+                                "name": "Avatar",
+                                "type": "asset",
+                                "value": [
+                                  {
+                                    "name": "Home Avatar.png",
+                                    "description": null,
+                                    "type": "image/png",
+                                    "size": 20534,
+                                    "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/a86b76a1-5abc-4876-b713-7695d6e95b84/Home%20Avatar.png",
+                                    "width": 96,
+                                    "height": 96,
+                                    "renditions": {}
+                                  }
+                                ]
+                              },
+                              "name": {
+                                "name": "Name",
+                                "type": "text",
+                                "value": "Bonnie Green"
+                              },
+                              "date": {
+                                "name": "Date",
+                                "type": "text",
+                                "value": "Aug 10, 2021 · 6 min read"
+                              },
+                              "button_cta": {
+                                "images": [],
+                                "linkedItemCodenames": [
+                                  "n1f5e316a_9f21_0175_ceeb_bbc99c4ca9c3"
+                                ],
+                                "linkedItems": [
+                                  {
+                                    "elements": {
+                                      "button_alignment": {
+                                        "name": "Button Alignment",
+                                        "type": "multiple_choice",
+                                        "value": []
+                                      },
+                                      "color": {
+                                        "name": "color",
+                                        "type": "multiple_choice",
+                                        "value": [
+                                          {
+                                            "name": "bg-accent-2",
+                                            "codename": "bg_accent_2"
+                                          }
+                                        ]
+                                      },
+                                      "button_text": {
+                                        "name": "Button Text",
+                                        "type": "text",
+                                        "value": "Read more"
+                                      },
+                                      "button_link": {
+                                        "name": "Button Link",
+                                        "type": "text",
+                                        "value": "/webinar/key-insights-for-data-driven-marketing"
+                                      }
+                                    },
+                                    "system": {
+                                      "codename": "n1f5e316a_9f21_0175_ceeb_bbc99c4ca9c3",
+                                      "collection": "jynai",
+                                      "id": "1f5e316a-9f21-0175-ceeb-bbc99c4ca9c3",
+                                      "language": "default",
+                                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                                      "name": "1f5e316a-9f21-0175-ceeb-bbc99c4ca9c3",
+                                      "sitemapLocations": [],
+                                      "type": "na__cta",
+                                      "workflowStep": null
+                                    }
+                                  }
+                                ],
+                                "links": [],
+                                "name": "Button Cta",
+                                "type": "rich_text",
+                                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n1f5e316a_9f21_0175_ceeb_bbc99c4ca9c3\"></object>"
+                              }
+                            },
+                            "system": {
+                              "codename": "b98a5f01_5091_01df_4b4d_b66acff340e2",
+                              "collection": "jynai",
+                              "id": "b98a5f01-5091-01df-4b4d-b66acff340e2",
+                              "language": "default",
+                              "lastModified": "2024-04-11T15:26:25.3787022Z",
+                              "name": "b98a5f01-5091-01df-4b4d-b66acff340e2",
+                              "sitemapLocations": [],
+                              "type": "blog__card",
+                              "workflowStep": null
+                            }
+                          }
+                        ],
+                        "links": [],
+                        "name": "Feature Card",
+                        "type": "rich_text",
+                        "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n6218c5b9_850b_0156_26b7_4766ba5ffe52\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n7dcc8e4b_3ea9_0136_3db1_a746fcc85775\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"b98a5f01_5091_01df_4b4d_b66acff340e2\"></object>"
+                      }
+                    },
+                    "system": {
+                      "codename": "b2b6751b_40f6_01b3_f2e1_1d8170ac4850",
+                      "collection": "jynai",
+                      "id": "b2b6751b-40f6-01b3-f2e1-1d8170ac4850",
+                      "language": "default",
+                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                      "name": "b2b6751b-40f6-01b3-f2e1-1d8170ac4850",
+                      "sitemapLocations": [],
+                      "type": "feature__card__row",
+                      "workflowStep": null
+                    }
+                  }
+                ],
+                "links": [],
+                "name": "Components",
+                "type": "rich_text",
+                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"b2b6751b_40f6_01b3_f2e1_1d8170ac4850\"></object>"
+              }
+            },
+            "system": {
+              "codename": "cf4cb734_cecc_01fc_6855_22a53d7885bd",
+              "collection": "jynai",
+              "id": "cf4cb734-cecc-01fc-6855-22a53d7885bd",
+              "language": "default",
+              "lastModified": "2024-04-11T15:26:25.3787022Z",
+              "name": "cf4cb734-cecc-01fc-6855-22a53d7885bd",
+              "sitemapLocations": [],
+              "type": "component__section",
+              "workflowStep": null
+            }
+          },
+          {
+            "elements": {
+              "padding": {
+                "name": "Padding",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "Small",
+                    "codename": "small"
+                  }
+                ]
+              },
+              "margin": {
+                "name": "Margin",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "background_color": {
+                "name": "Background color",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "Primary",
+                    "codename": "primary"
+                  }
+                ]
+              },
+              "components": {
+                "images": [],
+                "linkedItemCodenames": [
+                  "n366eed02_f4c3_01a3_2997_ac0c88fb831a"
+                ],
+                "linkedItems": [
+                  {
+                    "elements": {
+                      "heading__heading_text": {
+                        "name": "Heading Text",
+                        "type": "text",
+                        "value": "Smarter marketing, made easy"
+                      },
+                      "heading__heading_type": {
+                        "name": "Heading Type",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "H3",
+                            "codename": "h3"
+                          }
+                        ]
+                      },
+                      "heading__heading_size": {
+                        "name": "Heading Size",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "4XL",
+                            "codename": "n4xl"
+                          }
+                        ]
+                      },
+                      "heading__heading_weight": {
+                        "name": "Heading Weight",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "extrabold",
+                            "codename": "extrabold"
+                          }
+                        ]
+                      },
+                      "heading__heading_color": {
+                        "name": "Heading Color",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "Primary 3",
+                            "codename": "primary_3"
+                          }
+                        ]
+                      },
+                      "description_left": {
+                        "name": "Description Left",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "description_right": {
+                        "name": "Description Right",
+                        "type": "text",
+                        "value": "How? Through the unmatched power of AI and intent data, ensuring every marketing move is laser-focused and highly impactful. Our data-driven strategies lead to higher engagement, better conversions, and authentic customer relationships. We fill in the gaps of campaign management where you need the most help. Whether you need hundreds or thousands of leads a month, we deliver without compromise. "
+                      }
+                    },
+                    "system": {
+                      "codename": "n366eed02_f4c3_01a3_2997_ac0c88fb831a",
+                      "collection": "jynai",
+                      "id": "366eed02-f4c3-01a3-2997-ac0c88fb831a",
+                      "language": "default",
+                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                      "name": "366eed02-f4c3-01a3-2997-ac0c88fb831a",
+                      "sitemapLocations": [],
+                      "type": "content__b",
+                      "workflowStep": null
+                    }
+                  }
+                ],
+                "links": [],
+                "name": "Components",
+                "type": "rich_text",
+                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n366eed02_f4c3_01a3_2997_ac0c88fb831a\"></object>"
+              }
+            },
+            "system": {
+              "codename": "cbbeb845_9646_01b1_104d_251d787185b4",
+              "collection": "jynai",
+              "id": "cbbeb845-9646-01b1-104d-251d787185b4",
+              "language": "default",
+              "lastModified": "2024-04-11T15:26:25.3787022Z",
+              "name": "cbbeb845-9646-01b1-104d-251d787185b4",
+              "sitemapLocations": [],
+              "type": "component__section",
+              "workflowStep": null
+            }
+          },
+          {
+            "elements": {
+              "padding": {
+                "name": "Padding",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "margin": {
+                "name": "Margin",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "None",
+                    "codename": "none"
+                  }
+                ]
+              },
+              "background_color": {
+                "name": "Background color",
+                "type": "multiple_choice",
+                "value": [
+                  {
+                    "name": "White",
+                    "codename": "white"
+                  }
+                ]
+              },
+              "components": {
+                "images": [],
+                "linkedItemCodenames": [
+                  "cb8b509d_f8fe_01ea_a929_948123a75542"
+                ],
+                "linkedItems": [
+                  {
+                    "elements": {
+                      "heading__heading_text": {
+                        "name": "Heading Text",
+                        "type": "text",
+                        "value": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+                      },
+                      "heading__heading_type": {
+                        "name": "Heading Type",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "H3",
+                            "codename": "h3"
+                          }
+                        ]
+                      },
+                      "heading__heading_size": {
+                        "name": "Heading Size",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "3XL",
+                            "codename": "n3xl"
+                          }
+                        ]
+                      },
+                      "heading__heading_weight": {
+                        "name": "Heading Weight",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "extrabold",
+                            "codename": "extrabold"
+                          }
+                        ]
+                      },
+                      "heading__heading_color": {
+                        "name": "Heading Color",
+                        "type": "multiple_choice",
+                        "value": [
+                          {
+                            "name": "Primary",
+                            "codename": "primary"
+                          }
+                        ]
+                      },
+                      "background_image": {
+                        "name": "Background Image",
+                        "type": "asset",
+                        "value": [
+                          {
+                            "name": "Home Jumbotron.png",
+                            "description": null,
+                            "type": "image/png",
+                            "size": 157422,
+                            "url": "https://preview-assets-us-01.kc-usercontent.com:443/38f15223-0b7b-00ee-5f41-6669a0281622/42931662-427b-4b90-84f4-04d0e91e957b/Home%20Jumbotron.png",
+                            "width": 1000,
+                            "height": 321,
+                            "renditions": {}
+                          }
+                        ]
+                      },
+                      "description": {
+                        "name": "Description",
+                        "type": "text",
+                        "value": ""
+                      },
+                      "button_cta": {
+                        "images": [],
+                        "linkedItemCodenames": [
+                          "n43f93007_15d6_0149_7e3a_c62b0ef62140"
+                        ],
+                        "linkedItems": [
+                          {
+                            "elements": {
+                              "button_alignment": {
+                                "name": "Button Alignment",
+                                "type": "multiple_choice",
+                                "value": []
+                              },
+                              "color": {
+                                "name": "color",
+                                "type": "multiple_choice",
+                                "value": [
+                                  {
+                                    "name": "bg-accent-2",
+                                    "codename": "bg_accent_2"
+                                  }
+                                ]
+                              },
+                              "button_text": {
+                                "name": "Button Text",
+                                "type": "text",
+                                "value": "Join waitlist"
+                              },
+                              "button_link": {
+                                "name": "Button Link",
+                                "type": "text",
+                                "value": "/contact-us/"
+                              }
+                            },
+                            "system": {
+                              "codename": "n43f93007_15d6_0149_7e3a_c62b0ef62140",
+                              "collection": "jynai",
+                              "id": "43f93007-15d6-0149-7e3a-c62b0ef62140",
+                              "language": "default",
+                              "lastModified": "2024-04-11T15:26:25.3787022Z",
+                              "name": "43f93007-15d6-0149-7e3a-c62b0ef62140",
+                              "sitemapLocations": [],
+                              "type": "na__cta",
+                              "workflowStep": null
+                            }
+                          }
+                        ],
+                        "links": [],
+                        "name": "Button Cta",
+                        "type": "rich_text",
+                        "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n43f93007_15d6_0149_7e3a_c62b0ef62140\"></object>"
+                      }
+                    },
+                    "system": {
+                      "codename": "cb8b509d_f8fe_01ea_a929_948123a75542",
+                      "collection": "jynai",
+                      "id": "cb8b509d-f8fe-01ea-a929-948123a75542",
+                      "language": "default",
+                      "lastModified": "2024-04-11T15:26:25.3787022Z",
+                      "name": "cb8b509d-f8fe-01ea-a929-948123a75542",
+                      "sitemapLocations": [],
+                      "type": "hero__b",
+                      "workflowStep": null
+                    }
+                  }
+                ],
+                "links": [],
+                "name": "Components",
+                "type": "rich_text",
+                "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"cb8b509d_f8fe_01ea_a929_948123a75542\"></object>"
+              }
+            },
+            "system": {
+              "codename": "n3a0e42b2_a13c_0168_ae17_3d1052ca5776",
+              "collection": "jynai",
+              "id": "3a0e42b2-a13c-0168-ae17-3d1052ca5776",
+              "language": "default",
+              "lastModified": "2024-04-11T15:26:25.3787022Z",
+              "name": "3a0e42b2-a13c-0168-ae17-3d1052ca5776",
+              "sitemapLocations": [],
+              "type": "component__section",
+              "workflowStep": null
+            }
+          }
+        ],
+        "links": [],
+        "name": "Components",
+        "type": "rich_text",
+        "value": "<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"d7512ce2_c8d7_013d_5df4_ba7744d54ce0\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n622cc304_dd29_01b3_11b7_80287be72dfc\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"cf4cb734_cecc_01fc_6855_22a53d7885bd\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"cbbeb845_9646_01b1_104d_251d787185b4\"></object>\n<object type=\"application/kenticocloud\" data-type=\"item\" data-rel=\"component\" data-codename=\"n3a0e42b2_a13c_0168_ae17_3d1052ca5776\"></object>"
+      },
+      "meta_title": {
+        "name": "Meta Title",
+        "type": "text",
+        "value": "Build Better Campaigns: One-Stop-Shop For B2B Leads, Data, Media & Events | Machintel"
+      },
+      "meta_description": {
+        "name": "Meta Description",
+        "type": "text",
+        "value": "Machintel is the future of intelligent B2B marketing. We combine data, technology and creativity to generate leads and revenue for growth-focused companies."
+      },
+      "og_title": {
+        "name": "OG Title",
+        "type": "text",
+        "value": "Build Better Campaigns: One-Stop-Shop For B2B Leads, Data, Media & Events | Machintel"
+      },
+      "og_description": {
+        "name": "OG Description",
+        "type": "text",
+        "value": "Machintel is the future of intelligent B2B marketing. We combine data, technology and creativity to generate leads and revenue for growth-focused companies."
+      }
+    },
+    "system": {
+      "codename": "jyn_home",
+      "collection": "jynai",
+      "id": "cee15314-4d0a-4a57-bebb-8113405e6b9b",
+      "language": "default",
+      "lastModified": "2024-04-11T15:26:25.3787022Z",
+      "name": "Jyn Home",
+      "sitemapLocations": [],
+      "type": "component_page",
+      "workflowStep": "draft"
+    }
+  }
+]

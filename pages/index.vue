@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Render components dynamically based on linkedItems -->
     <div v-for="item in linkedItems" :key="item.system.codename">
       <component
         :is="componentName(item)"
@@ -12,34 +11,19 @@
 </template>
 
 <script>
-import { DeliveryClient } from "@kentico/kontent-delivery";
-var Vue = require("vue");
-var VueScrollTo = require("vue-scrollto");
+import uidData from "@/static/json/component_page";
 
-Vue.use(VueScrollTo);
 export default {
-  async asyncData({ params }) {
-    const projectId = process.env.PROJECT_ID;
-    const previewApiKey = process.env.PREVIEW_ID;
-
-    const config = {
-      projectId: projectId,
-    };
-    if (previewApiKey) {
-      config.previewApiKey = previewApiKey;
-      config.defaultQueryConfig = { usePreviewMode: true };
-    }
-
-    const deliveryClient = new DeliveryClient(config);
-
+  async asyncData({ route, params }) {
+    const currentData = uidData[0];
     try {
-      const response = await deliveryClient
-        .item("jyn_home") // Replace with your actual Kontent item codename
-        .toPromise();
-      // returns item data
-      return { pageData: response.data.item };
+      console.log('pageData',uidData[0].elements.slug.value)
+      return {
+        pageData: currentData,
+      };
     } catch (error) {
       console.error("Error fetching data:", error);
+      window.open("https://machintel.com/404/", "_self");
       return { pageData: {} };
     }
   },
@@ -47,6 +31,7 @@ export default {
   // Import and resolve components dynamically
   computed: {
     linkedItems() {
+      console.log('this.pageData',this.pageData)
       return this.pageData.elements.components.linkedItems;
     },
   },
@@ -131,17 +116,17 @@ export default {
 };
 
 // You can also pass in the default options
-Vue.use(VueScrollTo, {
-  container: "body",
-  duration: 500,
-  easing: "ease",
-  offset: 0,
-  force: true,
-  cancelable: true,
-  onStart: false,
-  onDone: false,
-  onCancel: false,
-  x: false,
-  y: true,
-});
+// Vue.use(VueScrollTo, {
+//   container: "body",
+//   duration: 500,
+//   easing: "ease",
+//   offset: 0,
+//   force: true,
+//   cancelable: true,
+//   onStart: false,
+//   onDone: false,
+//   onCancel: false,
+//   x: false,
+//   y: true,
+// });
 </script>
